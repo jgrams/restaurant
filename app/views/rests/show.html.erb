@@ -24,6 +24,8 @@
   <strong>Phone:</strong>
   <%= @rest.phone %>
 </p>
-<%= @rest %>
+
+<%= image_tag(@map_url_string, alt: "Google Map") %>
+<br>
 <%= link_to 'Edit', edit_rest_path(@rest) %> |
 <%= link_to 'Back', rests_path %>

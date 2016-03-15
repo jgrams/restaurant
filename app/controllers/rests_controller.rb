@@ -1,5 +1,5 @@
 class RestsController < ApplicationController
-  before_action :set_rest, only: [:show, :edit, :update, :destroy]
+  before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link]
 
   # GET /rests
   # GET /rests.json
@@ -10,6 +10,7 @@ class RestsController < ApplicationController
   # GET /rests/1
   # GET /rests/1.json
   def show
+    map_link
   end
 
   # GET /rests/new
@@ -59,6 +60,14 @@ class RestsController < ApplicationController
       format.html { redirect_to rests_url, notice: 'Rest was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def map_link
+    map_url_array = ["https://maps.googleapis.com/maps/api/staticmap?markers="]
+    map_url_array.push(@rest.address.gsub(/\s+/, "+"))
+    map_url_array.push("&zoom=16&size=400x400&key=")
+    map_url_array.push("#{Rails.application.secrets.google_map_api}")
+    @map_url_string = map_url_array.join
   end
 
   private
