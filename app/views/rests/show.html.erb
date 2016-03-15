@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rest.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @rest.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @rest.description %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @rest.owner %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @rest.phone %>
+</p>
+<%= @rest %>
+<%= link_to 'Edit', edit_rest_path(@rest) %> |
+<%= link_to 'Back', rests_path %>
