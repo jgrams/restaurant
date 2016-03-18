@@ -1,8 +1,8 @@
 class RestsController < ApplicationController
   before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link]
-
   # GET /rests
   # GET /rests.json
+
   def index
     @rests = Rest.all
   end
