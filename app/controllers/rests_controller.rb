@@ -1,6 +1,5 @@
 class RestsController < ApplicationController
   before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link]
-  before_action :validate_owner!, except: [:index, :show, :map_link]
   # GET /rests
   # GET /rests.json
 
