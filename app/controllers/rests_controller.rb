@@ -27,7 +27,11 @@ class RestsController < ApplicationController
   # POST /rests.json
   def create
     @rest = Rest.new(rest_params)
-
+    binding.pry
+    RestOwner.each do |s|
+      if s.owner_id = current_user.id
+    end
+    end
     respond_to do |format|
       if @rest.save
         format.html { redirect_to @rest, notice: 'Rest was successfully created.' }

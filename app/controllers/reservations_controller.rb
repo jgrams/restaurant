@@ -11,8 +11,6 @@ class ReservationsController < ApplicationController
     @reservation.user_id = current_user.id
     if @reservation.save
       redirect_to '/reservations'
-    else 
-      redirect_to :root
     end
   end
 
@@ -23,6 +21,7 @@ class ReservationsController < ApplicationController
     end
     end
   end
+
 
   def reservation_params
     params.require(:reservation).permit(:time, :name, :rest_id, :user_id)

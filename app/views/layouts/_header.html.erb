@@ -3,6 +3,9 @@
     <%= link_to "Restaurantinator", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
+        <% if owner_signed_in? %>
+          <li><%= link_to 'New Restaurant', new_rest_path %></li>
+        <%end%>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Reservations",  new_reservation_path   %></li>
         <li><%= link_to "Restaurants",  rests_path   %></li>
