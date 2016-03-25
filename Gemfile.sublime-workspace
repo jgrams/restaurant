@@ -1,0 +1,217 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inval",
+				"invalid_email"
+			],
+			[
+				"invalid",
+				"invalid_addresses"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"elif",
+				"elif"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/johngramila/workspace/restaurant/app/views/rests/show.html.erb",
+		"/Users/johngramila/workspace/restaurant/Gemfile",
+		"/Users/johngramila/workspace/restaurant/app/models/owner.rb",
+		"/Users/johngramila/workspace/restaurant/test/models/user_test.rb",
+		"/Users/johngramila/workspace/restaurant/db/migrate/20160316203858_owner.rb",
+		"/Users/johngramila/workspace/restaurant/config/secrets.yml",
+		"/Users/johngramila/workspace/restaurant/db/schema.rb",
+		"/Users/johngramila/workspace/restaurant/app/models/rest.rb",
+		"/Users/johngramila/workspace/restaurant/app/controllers/application_controller.rb",
+		"/Users/johngramila/workspace/restaurant_list/app/models/rest_list.rb",
+		"/Users/johngramila/workspace/restaurant_list/db/migrate/20160314182602_add_restid_to_rest_owner.rb",
+		"/Users/johngramila/workspace/restaurant_list/db/schema.rb",
+		"/Users/johngramila/workspace/restaurant_list/app/models/owner.rb",
+		"/Users/johngramila/workspace/restaurant_list/app/models/rest_owner.rb",
+		"/Users/johngramila/workspace/restaurant_list/db/migrate/20160314171736_add_ids_to_rest_owner.rb",
+		"/Users/johngramila/workspace/restaurant_list/app/views/owner/index.html.erb",
+		"/Users/johngramila/workspace/restaurant_list/app/controllers/owner_controller.rb",
+		"/Users/johngramila/workspace/restaurant_list/app/views/rest_lists/new.html.erb",
+		"/Users/johngramila/workspace/restaurant_list/app/views/rest_lists/_form.html.erb",
+		"/Users/johngramila/workspace/restaurant_list/app/views/owner/new.html.erb",
+		"/Users/johngramila/workspace/restaurant_list/app/controllers/rest_lists_controller.rb",
+		"/Users/johngramila/workspace/restaurant_list/config/locales/en.yml",
+		"/Users/johngramila/workspace/restaurant_list/Gemfile",
+		"/Users/johngramila/workspace/restaurant_list/app/views/rest_lists/index.html.erb",
+		"/Users/johngramila/workspace/restaurant_list/config/environment.rb",
+		"/Users/johngramila/workspace/Fizzbuzz.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"device",
+			"user",
+			"queuebedfalse",
+			"/api/queuebedfalse'",
+			"@rest_list",
+			"end"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@owner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Gemfile.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

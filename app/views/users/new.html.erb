@@ -1,0 +1,13 @@
+<%= form_for @user do |x| %>
+
+<%= x.label :name %>
+<%= x.text_field :name %><br>
+<%= x.label :email %>
+<%= x.email_field :email %><br>
+<%= x.label :password %>
+<%= x.password_field :password %><br>
+<%= x.label :password_confirmation %>
+<%= x.password_field :password_confirmation %>
+<br>
+<%= x.submit "Create an account"%>
+<% end %>

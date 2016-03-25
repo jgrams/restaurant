@@ -1,5 +1,6 @@
 class RestsController < ApplicationController
   before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link]
+  before_action :authenticate_owner!, only: [:new, :edit]
   # GET /rests
   # GET /rests.json
 

@@ -1,0 +1,14 @@
+<%= form_for(@reservation) do |x| %>
+<div class="field">  
+<%= x.label :time %>
+<%= x.text_field :time %><br>
+</div>
+<div class="field">
+<br>
+<%= x.select(:rest_id, options_for_select(@restaurant_options)) %>
+</div>
+<div>
+<br>
+<%= x.submit "Request a Reservation"%>
+</div>
+<% end %>

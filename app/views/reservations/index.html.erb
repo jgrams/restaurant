@@ -1,0 +1,6 @@
+<h1>You have reservations at:</h1>
+<div class="h2">
+<%= @user_reservations.each do |reservation| %>
+<%= reservation.time %> at <%= reservation.rest.name %><br><br>
+<% end %>
+</div>
