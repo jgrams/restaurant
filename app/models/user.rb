@@ -9,6 +9,4 @@ class User < ActiveRecord::Base
 		length: { maximum: 255 }, 
 		format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i },
 		uniqueness: { case_sensitive: false }
-  accepts_nested_attributes_for :reservations
-  
 end

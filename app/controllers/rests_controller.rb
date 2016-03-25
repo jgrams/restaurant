@@ -27,8 +27,7 @@ class RestsController < ApplicationController
   # POST /rests.json
   def create
     @rest = Rest.new(rest_params)
-    binding.pry
-    end
+    @rest.owners << current_owner
     respond_to do |format|
       if @rest.save
         format.html { redirect_to @rest, notice: 'Rest was successfully created.' }

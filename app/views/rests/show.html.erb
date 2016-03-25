@@ -17,7 +17,11 @@
 
 <p>
   <strong>Owners:</strong>
-  <%= @rest.owner %>
+  <ul>
+  <% @rest.owners.each do |owner| %>
+    <li><%= owner.email %></li>
+  <% end %>
+  </ul>
 </p>
 
 <p>
@@ -29,4 +33,4 @@
 <br>
 <%= link_to 'Edit', edit_rest_path(@rest) %> |
 <%= link_to 'Back', rests_path %> | 
-<%= link_to 'Reservations', new_reservation_path(@rest) %>
+<%= link_to 'Reservations', new_reservation_path(id: @rest.id) %>
