@@ -1,12 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Browse Restaurants", root_path, id: "logo" %>
+    <%= link_to "Restaurantinator", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Reservation",  new_reservation_path   %></li>
+        <li><%= link_to "Reservations",  new_reservation_path   %></li>
+        <li><%= link_to "Restaurants",  rests_path   %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Log out", destroy_user_session_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :get %></li>
         <%else%>
           <li><%= link_to "Log in", new_user_session_path %></li>
         <%end%>
