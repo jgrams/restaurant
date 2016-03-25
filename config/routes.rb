@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :owners
+  devise_for :users
   root to: "rests#index"
   
   resources :rests
-  resources :users
-    
+  resources :reservations
+  get 'reservations/new' => 'reservation#new'
+  puts 'reservations/new' => 'reservation#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
