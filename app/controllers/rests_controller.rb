@@ -1,6 +1,7 @@
 class RestsController < ApplicationController
-  before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link]
+  before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link, :star]
   before_action :authenticate_owner!, only: [:new, :edit]
+  before_action :authenticate_user!, only: [:star]
   # GET /rests
   # GET /rests.json
 
@@ -21,6 +22,10 @@ class RestsController < ApplicationController
 
   # GET /rests/1/edit
   def edit
+  end
+
+  def star
+    
   end
 
   # POST /rests

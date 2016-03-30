@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160325053849) do
+ActiveRecord::Schema.define(version: 20160330043131) do
 
   create_table "owners", force: :cascade do |t|
     t.datetime "created_at",                          null: false
@@ -56,6 +56,17 @@ ActiveRecord::Schema.define(version: 20160325053849) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  create_table "stars", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "rest_id"
+    t.boolean  "starred"
+  end
+
+  add_index "stars", ["rest_id"], name: "index_stars_on_rest_id"
+  add_index "stars", ["user_id"], name: "index_stars_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false
