@@ -3,8 +3,15 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "rests#index"
   
-  resources :rests
-  resources :reservations  # The priority is based upon order of creation: first created -> highest priority.
+  resources :rests do
+    member do
+      post 'star'
+    end
+  end
+
+  resources :reservations  
+
+  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

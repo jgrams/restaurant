@@ -20,10 +20,18 @@
         <td><%= rest.name %></td>
         <td><%= rest.address %></td>
         <td><%= rest.description %></td>
+        <% rest.owners.each do |x| %> 
+          <td><%=  x.email %></td>
+        <% end %>
         <td><%= rest.phone %></td>
+        <% if user_signed_in? && !already_starred?(rest, current_user) %>
+          <td><%= button_to "Star It!", star_rest_path(rest.id), remote: true, method: :post %></td>
+        <% end %>        
+        <div>
         <td><%= link_to 'Show', rest %></td>
         <td><%= link_to 'Edit', edit_rest_path(rest) %></td>
         <td><%= link_to 'Destroy', rest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </div>
       </tr>
     <% end %>
   </tbody>

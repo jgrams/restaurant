@@ -7,12 +7,16 @@ class RestsController < ApplicationController
 
   def index
     @rests = Rest.all
+    if user_signed_in?
+      @star = current_user.id 
+    end
   end
 
   # GET /rests/1
   # GET /rests/1.json
   def show
     map_link
+    @num_stars = @rest.stars.count
   end
 
   # GET /rests/new
@@ -25,7 +29,8 @@ class RestsController < ApplicationController
   end
 
   def star
-    @rest.star.create(user_id: current_user.id, starred: true)
+    @rest.stars.create(user_id: current_user.id, starred: true)
+    binding.pry
   end
 
   # POST /rests
