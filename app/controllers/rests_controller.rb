@@ -25,7 +25,7 @@ class RestsController < ApplicationController
   end
 
   def star
-    
+    @rest.star.create(user_id: current_user.id, starred: true)
   end
 
   # POST /rests
