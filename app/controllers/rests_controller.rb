@@ -29,8 +29,8 @@ class RestsController < ApplicationController
   end
 
   def star
+    sleep 2
     @rest.stars.create(user_id: current_user.id, starred: true)
-    binding.pry
   end
 
   # POST /rests

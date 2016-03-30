@@ -14,8 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-
-$(".buttonGrey").on("click", function() {
-  // do something
-});
