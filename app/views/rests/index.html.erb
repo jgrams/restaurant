@@ -27,8 +27,7 @@
         <% if user_signed_in? && !already_starred?(rest, current_user) %>
           <td><span id="starred"><%= button_to "Star It!", star_rest_path(rest.id), remote: true, method: :post, data: {disable_with: "Starring!"} %></span></td>
         <% elsif user_signed_in? && already_starred?(rest, current_user) %>
-          <td>Starred!</td>
-        <% binding.pry %>    
+          <td><span id="unstarred"><%= button_to "Unstar!", unstar_rest_path(rest.id), remote: true, method: :post, data: {disable_with: "Unstarring!"} %></span></td>
         <% end %>        
         <div>
         <td><%= link_to 'Show', rest %></td>

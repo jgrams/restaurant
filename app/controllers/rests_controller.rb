@@ -1,7 +1,7 @@
 class RestsController < ApplicationController
-  before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link, :star]
+  before_action :set_rest, only: [:show, :edit, :update, :destroy, :map_link, :star, :unstar]
   before_action :authenticate_owner!, only: [:new, :edit]
-  before_action :authenticate_user!, only: [:star]
+  before_action :authenticate_user!, only: [:star, :unstar]
   # GET /rests
   # GET /rests.json
 
@@ -33,6 +33,10 @@ class RestsController < ApplicationController
     @rest.stars.create(user_id: current_user.id, starred: true)
   end
 
+  def unstar
+    sleep 1
+    @rest.stars.update.first(starred: false)
+  end
   # POST /rests
   # POST /rests.json
   def create

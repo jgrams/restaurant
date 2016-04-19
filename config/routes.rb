@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :rests do
     member do
       post 'star'
+      post 'unstar'
     end
   end
 
